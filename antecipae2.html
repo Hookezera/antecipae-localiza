@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="antecipae.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="antecipae_title">
+            <img src="img/2antecipae.png" alt="contrato">
+            <span>Antecipaê</span>
+        </div>
+        <div class="bar-info">
+            <span>Insira o número do contrato</span>
+            <form onsubmit="lancar(event)" id="formulario">
+                <input type="text" id="contract-number" placeholder="Número do contrato" required>
+                <label for="user">Lançado por:</label>
+                <select name="matricula" id="user-id">
+                    <option value="---">--- Usuário ---</option>
+                    <option value="135532">Lucas Melo</option>
+                    <option value="121283">Rosilane Oliveira</option>
+                    <option value="137720">Bruna Farias</option>
+                    <option value="118069">Katiane Nere</option>
+                    <option value="144057">Juscilene Maria</option>
+                </select>
+                <button id="lancaar">Lançar</button>
+            </form>
+        </div>
+        <div class="area-info">
+            <div class="info-contract">
+                <div class="info-contracts">
+                    <div id="info-1">
+                        <div class="span-info">
+                            <span class="span-span">Contratos lançados hoje</span>
+                            <div class="info-lanc">
+                                <span>Número do contrato</span>
+                                <span> Lançado por</span>
+                            </div>
+                        </div>
+                        <div class="area-table">
+                            <table>
+                                <tbody id="tbody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="export">Exportar para excel</div>
+                    </div>
+                </div>
+                <div class="info-contracts">
+                    <div id="info-2">
+                        <div class="span-info">
+                            <span class="span-span">Contratos lançados durante o mês</span>
+                            <div class="info-lanc">
+                                <span>Número do contrato</span>
+                                <span> Lançado por</span>
+                            </div>
+                        </div>
+                        <div class="area-table">
+                            <table>
+                                <tbody id="tbodyy">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="export">Exportar para excel</div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-numbers">
+                <div class="numbers-contracts">
+                    <span class="spam">Contratos hoje:</span>
+                    <span class="number-count">0</span>
+                </div>
+                <div class="numbers-contracts">
+                    <span class="spam">Contratos lançados durante o mês:</span>
+                    <span class="number-count-mes">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/test.js" defer></script>
+</body>
+
+</html>
